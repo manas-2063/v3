@@ -518,12 +518,12 @@ def crack_file():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print('\033[0;91m---------------------------------')
-    print(" \x1b[38;5;196m[\x1b[37m1\x1b[38;5;196m]\x1b[37m ONLY OLD IDZ")
-	print(" \x1b[38;5;196m[\x1b[37m2\x1b[38;5;196m]\x1b[37m ONLY NEW IDZ")
-	print(" \x1b[38;5;196m[\x1b[37m3\x1b[38;5;196m]\x1b[37m BOTH MIX IDZ")
-	linex()
-	hu = input(' \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m CHOOSE : ')
+    print('\033[0;91m=============================')
+    print("\033[97;1m[\033[92;1m1\033[97;1m] \033[0;92mCLONING FOR ONLY OLD IDz")
+    print("\033[97;1m[\033[92;1m2\033[97;1m] CLONING FOR ONLY NEW IDz")
+    print("\033[97;1m[\033[92;1m3\033[97;1m] \033[0;92mCLONING FOR MIX IDz")
+    print('\033[0;91m=============================')
+    hu = input('\033[97;1m[\033[92;1m+\033[97;1m]CHOOSE :\033[92;1m ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
