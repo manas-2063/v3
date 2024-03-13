@@ -16,7 +16,7 @@ CON=sol()
 os.system("pkg install espeak")
  #------------------[ MANAS-Manas ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecManas Update...? ')
+print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecking Update...? ')
 time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mUpdate Done ✅")
