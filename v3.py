@@ -16,10 +16,10 @@ CON=sol()
 os.system("pkg install espeak")
  #------------------[ MANAS-file ]-------------------#
 import os, platform, time, sys
-print('\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mChecfile Update...? ')
+print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[0;92mChecfile Update...? ')
 time.sleep(5)
 os.system('clear')
-print("\033[97;1m[\033[92;1m+\033[97;1m] \033[0;92mUpdate done ✅")
+print("\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[0;92mUpdate done ✅")
 time.sleep(2)
 os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
 #------------------[ MANAS-file ]-------------------#
@@ -194,23 +194,23 @@ def animation(u):
 #os.system#("xdg-open https://www.facebook.com/MANAS.file.Ok.Bro")
 #------------------[ LOGO-LAKNAT ]-----------------#
 logo =""" 
-███╗   ███╗ █████╗ ███╗   ██╗ █████╗ ███████╗    
-████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝    
-██╔████╔██║███████║██╔██╗ ██║███████║███████╗    
-██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║╚════██║    
-██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║███████║    
-╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝  
+\x1b[38;5;231m ███╗   ███╗ █████╗ ███╗   ██╗ █████╗ ███████╗    \x1b[38;5;231m
+\x1b[38;5;231m ████╗ ████║██╔══██╗████╗  ██║██╔══██╗██╔════╝    \x1b[38;5;231m
+\x1b[38;5;231m ██╔████╔██║███████║██╔██╗ ██║███████║███████╗    \x1b[38;5;231m
+\x1b[38;5;231m ██║╚██╔╝██║██╔══██║██║╚██╗██║██╔══██║╚════██║    \x1b[38;5;231m
+\x1b[38;5;231m ██║ ╚═╝ ██║██║  ██║██║ ╚████║██║  ██║███████║    \x1b[38;5;231m
+\x1b[38;5;231m ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═╝  ╚═╝╚══════╝  \x1b[38;5;231m
 ----------------------------------------------
- AUTHOR     : MANAS TAMANG
- GITHUB     : MANAS-2063
- FACEBOOK   : MAN AS
- VERSION    : 0.1
+ \x1b[38;5;231mAUTHOR     : MANAS TAMANG\x1b[38;5;231m
+\x1b[38;5;231m GITHUB     : MANAS-2063\x1b[38;5;231m
+\x1b[38;5;231m FACEBOOK   : MAN AS\x1b[38;5;231m
+ \x1b[38;5;231mVERSION    : 0.1\x1b[38;5;231m
 ----------------------------------------------"""
 
 os.system('clear')
 print(logo)
 os.system('espeak -a 300 " Your,   Real,  Name,"')
-uname =input('\033[1;97m[\033[1;92m•\033[1;97m]\033[1;92m WHAT IS YOUR NAME \033[1;91m: \33[1;32m')
+uname =input('\033[1;97m[\033[1;92m•\x1b[38;5;231m WHAT IS YOUR NAME \x1b[38;5;231m')
 os.system('espeak -a 300 " Welcome,   to,  MANAS,  DAJU,  Tools"')
 pass
  
@@ -228,7 +228,7 @@ def login():
         except KeyError:
             login_lagi334()
         except requests.exceptions.ConnectionError:
-            print('\033[0;97m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' [×] NO INTERNET CONNECTION DETECTED')
             exit()
     except IOError:
@@ -265,14 +265,14 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \033[0;93mTODAY'S DATE :\033[1;92m "+date)
-    print('\033[0;97m-------------------------------------------------------')
+    print(f"\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m] \x1b[38;5;231mUSER NAME\x1b[38;5;231m :\x1b[38;5;231m "+uname)
+    print("\x1b[38;5;231m[\x1b[38;5;231m•\x1b[38;5;231m] \x1b[38;5;231mTODAY'S DATE :\x1b[38;5;231m "+date)
+    print('\x1b[38;5;231m-------------------------------------------------------')
     print(f"""\033[97;1m[\033[92;1m1\033[97;1m] \033[0;92mFILE CLONING         """)
     print("""\033[97;1m[\033[92;1m2\033[97;1m] \033[0;93mCONTACT WITH ADMIN""")
     print(f"""\033[97;1m[\033[92;1m3\033[97;1m] \033[92;1mCHECK OK IDz   """)
     print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
-    print('\033[0;97m---------------------')
+    print('\x1b[38;5;231m---------------------')
     MANAS = input('\x1b[1;92m[+] CHOOSE: ')
     if MANAS in ['111']:
         login()
@@ -287,11 +287,11 @@ def menu():
     elif MANAS in ['0']:
         os.system('rm -rf .token.txt')
         os.system('rm -rf .cookie.txt')
-        print('\033[0;97m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' [×] DONE EXIT ')
         exit()
     else:
-        print('\033[0;97m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' [×] SELECT CORRECTLY ')
         back()
  
@@ -472,7 +472,7 @@ def crack_file():
     print('\033[0;91m---------------------')
     #os.system#('espeak -a 300 " your file name"')
     print('\033[1;32m[ Put File Example:  /sdcard/file.txt  Etc...]')
-    o = input('\033[97;1m[\033[92;1m+\033[97;1m] INPut FILE NAME :\033[92;1m ')
+    o = input('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mINPut FILE NAME :\033[92;1m ')
     try:lin = open(o).read().splitlines()
     except:
         print('\033[0;91m---------------------')
@@ -533,12 +533,12 @@ def setting():
 def passwrd():
     os.system('clear')
     print(logo)
-    print(f"\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
+    print(f"\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
     print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
-    print('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;92mYOUR TOTAL IDz \033[0;97m:\033[1;92m ',str(len(id)))
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\033[0;97m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
+    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;92mYOUR TOTAL IDz \x1b[38;5;231m:\033[1;92m ',str(len(id)))
+    print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\x1b[38;5;231m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
     print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
-    print('\033[0;97m--------------------------------------------------')
+    print('\x1b[38;5;231m--------------------------------------------------')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
             idf,nmf = yuzong.split('|')[0],yuzong.split('|')[1].lower()
@@ -604,11 +604,11 @@ def passwrd():
             else:
                 pool.submit(crackfree,idf,pwv)
     print('\n\033[1;37m------------------------------------------')
-    print('\033[97;1m[\033[92;1m+\033[97;1m] CLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
+    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mCLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
     print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
-    print('\033[97;1m[\033[92;1m+\033[97;1m] CP :\033[0;93m %s '%(cp))
+    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mCP :\033[0;93m %s '%(cp))
     print('\n\033[1;37m------------------------------------------')
-    woi = input('\033[97;1m[\033[92;1m+\033[97;1m] \033[1;37m ENTER TO BACK')
+    woi = input('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;37m ENTER TO BACK')
     os.system("python v3.py")
     exit()
  
