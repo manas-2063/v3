@@ -16,12 +16,11 @@ CON=sol()
 os.system("pkg install espeak")
  #------------------[ MANAS-file ]-------------------#
 import os, platform, time, sys
-print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[0;92mChecfile Update...? ')
+print(f""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37mChecking Update...? """)
 time.sleep(5)
 os.system('clear')
-print("\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[0;92mUpdate done ✅")
+print(f""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37mUpdate done ✅""")
 time.sleep(2)
-os.system(f'xdg-open https://facebook.com/groups/554714119911648/')
 #------------------[ MANAS-file ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
 ua = ["Mozilla/5.0 (Linux; Android 8.0.0; LLD-AL20) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Mobile Safari/537.36",]
@@ -265,15 +264,15 @@ class jalan:
 def menu():
     os.system('clear')
     print(logo)
-    print(f" \x1b[37m\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mUSER NAME\x1b[38;5;231m :\x1b[38;5;231m "+uname)
-    print(f" \x1b[37m\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mTODAY'S DATE :\x1b[38;5;231m "+date)
+    print(f" \x1b[37m\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mUSER NAME\x1b[38;5;231m :\x1b[38;5;231m "+uname)
+    print(f" \x1b[37m\x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mTODAY'S DATE :\x1b[38;5;231m "+date)
     print('\x1b[38;5;231m-------------------------------------------------------')
-    print(f""" \x1b[38;5;196m[\x1b[37m2\x1b[38;5;196m]\x1b[37m FILE CLONING         """)
+    print(f""" \x1b[38;5;196m[\x1b[37m1\x1b[38;5;196m]\x1b[37m FILE CLONING         """)
     print(f""" \x1b[38;5;196m[\x1b[37m2\x1b[38;5;196m]\x1b[37m CONTACT ADMIN""")
     print(f""" \x1b[38;5;196m[\x1b[37m3\x1b[38;5;196m]\x1b[37m CHECK RESULTS    """)
-    print("""\033[97;1m[\033[92;1m0\033[97;1m] \033[0;91mEXIT""")
+    print(f""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37m EXIT""")
     print('\x1b[38;5;231m---------------------')
-    MANAS = input('\x1b[1;92m[+] CHOOSE: ')
+    MANAS = input('\x1b[38;5;231m[+] CHOOSE: ')
     if MANAS in ['111']:
         login()
         dump_massal()
@@ -300,20 +299,20 @@ def menu():
 def result():
     os.system('clear')
     print(logo)
-    print(' \033[97;1m[\033[92;1m1\033[97;1m] CHECK CP IDZ ')
-    print(' \033[97;1m[\033[92;1m2\033[97;1m] CHECK OK IDZ ')
-    print(' \033[97;1m[\033[92;1m3\033[97;1m] EXIT ')
-    print('\033[0;91m---------------------')
-    kz = input(' \033[97;1m[\033[92;1m•\033[97;1m]CHOOSE : ')
+    print(' \x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CHECK CP IDZ ')
+    print(' \x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CHECK OK IDZ ')
+    print(' \x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m EXIT ')
+    print('\x1b[38;5;231m---------------------')
+    kz = input(' \x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCHOOSE : ')
     if kz in ['1','01']:
         try:vin = os.listdir('CP')
         except FileNotFoundError:
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
             time.sleep(3)
             back()
         if len(vin)==0:
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO CP RESULTS FOUND ')
             time.sleep(2)
             back()
@@ -328,22 +327,22 @@ def result():
                     nom = ''+str(cih)
                     lol.update({str(cih):str(isi)})
                     lol.update({nom:str(isi)})
-                    print('\033[0;91m---------------------')
+                    print('\x1b[38;5;231m---------------------')
                     print(' '+nom+'. '+isi+'\033[31m '+str(len(hem))+' \033[0m CP '+x)
                 else:
                     lol.update({str(cih):str(isi)})
                     print(' '+str(cih)+'. '+isi+'\033[31m '+str(len(hem))+' \033[0m CP '+x)
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             geeh = input(' \033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             try:geh = lol[geeh]
             except KeyError:
-                print('\033[0;91m---------------------')
+                print('\x1b[38;5;231m---------------------')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND ')
                 exit()
             try:lin = open('CP/'+geh,'r').read().splitlines()
             except:
-                print('\033[0;91m---------------------')
+                print('\x1b[38;5;231m---------------------')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
                 time.sleep(2)
                 back()
@@ -352,18 +351,18 @@ def result():
                 cpkuni=lin[nocp].split('|')
                 print(f' \033[97;1m[\033[92;1m•\033[97;1m] CP : \033[33m {cpkuni[0]}|{cpkuni[1]}\033[0m')
                 nocp +=1
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             input('\033[97;1m[\033[92;1m•\033[97;1m] PRESS ENTER TO BACK ')
             back()
     elif kz in ['2','02']:
         try:vin = os.listdir('OK')
         except FileNotFoundError:
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
             time.sleep(2)
             back()
         if len(vin)==0:
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OK RESULTS FOUND ')
             time.sleep(2)
             back()
@@ -375,7 +374,7 @@ def result():
                 except:continue
                 cih+=1
                 if cih<100:
-                    print('\033[0;91m---------------------')
+                    print('\x1b[38;5;231m---------------------')
                     nom = ''+str(cih)
                     lol.update({str(cih):str(isi)})
                     lol.update({nom:str(isi)})
@@ -383,17 +382,17 @@ def result():
                 else:
                     lol.update({str(cih):str(isi)})
                     print(' '+str(cih)+'. '+isi+'\033[32m '+str(len(hem))+' \033[0m OK '+x)
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             geeh = input(' \x1b[1;92m [•] CHOOSE : ')
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             try:geh = lol[geeh]
             except KeyError:
-                print('\033[0;91m---------------------')
+                print('\x1b[38;5;231m---------------------')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND ')
                 exit()
             try:lin = open('OK/'+geh,'r').read().splitlines()
             except:
-                print('\033[0;91m---------------------')
+                print('\x1b[38;5;231m---------------------')
                 animation(' \033[97;1m[\033[92;1m•\033[97;1m] FILE NOT FOUND ')
                 time.sleep(2)
                 back()
@@ -402,13 +401,13 @@ def result():
                 cpkuni=lin[nocp].split('|')
                 print(f'\033[97;1m[\033[92;1m•\033[97;1m] OK : \033[32m {cpkuni[0]}|{cpkuni[1]}\033[0m')
                 nocp +=1
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             input('\033[97;1m[\033[92;1m•\033[97;1m] PRESS ENTER TO BACK ')
             back()
     elif kz in ['0','00']:
         back()
     else:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' \033[97;1m[\033[92;1m•\033[97;1m] NO OPTION FOUND IN MENU')
         exit()
  
@@ -421,15 +420,15 @@ def dump_massal():
     except IOError:
         exit()
     try:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         jum = int(input(' \033[97;1m[\033[92;1m•\033[97;1m] ENTER TARGET AMOUNT  : '))
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
     except ValueError:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' [×] INVALID OPTION ')
         exit()
     if jum<1 or jum>100000000:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' [×] TRY AGAIN ')
         exit()
     ses=requests.Session()
@@ -450,18 +449,18 @@ def dump_massal():
         except (KeyError,IOError):
             pass
         except requests.exceptions.ConnectionError:
-            print('\033[0;91m---------------------')
+            print('\x1b[38;5;231m---------------------')
             animation(' [×] TRY AGAIN ')
             os.system('clear')
     try:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         print(f' \033[97;1m[\033[92;1m•\033[97;1m] TOTAL ID : \u001b[36m'+str(len(id))+'\033[1;37m')
         setting()
     except requests.exceptions.ConnectionError:
         print(f'{u}')
         back()
     except (KeyError,IOError):
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(" [×] DUMP ID FAILED ")
         time.sleep(3)
         back()
@@ -469,13 +468,13 @@ def dump_massal():
 #-------------[ CRACK-FROM-FILE ]------------------#
  
 def crack_file():
-    print('\033[0;91m---------------------')
+    print('\x1b[38;5;231m---------------------')
     #os.system#('espeak -a 300 " your file name"')
-    print('\033[1;32m[ Put File Example:  /sdcard/file.txt  Etc...]')
-    o = input('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mINPut FILE NAME :\033[92;1m ')
+    print('\033[0;91m[ Put File Example:  /sdcard/file.txt  Etc...]')
+    o = input('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mINPut FILE NAME :\033[0;91m ')
     try:lin = open(o).read().splitlines()
     except:
-        print('\033[0;91m---------------------')
+        print('\x1b[38;5;231m---------------------')
         animation(' [×] FILE NOT FOUND')
         time.sleep(2)
         back()
@@ -486,12 +485,12 @@ def crack_file():
 #-------------[ PENGATURAN-IDZ ]---------------#
  
 def setting():
-    print('\033[0;91m----------------------------------')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] \033[0;92mCLONING FOR ONLY OLD IDz")
-    print("\033[97;1m[\033[92;1m2\033[97;1m] CLONING FOR ONLY NEW IDz")
-    print("\033[97;1m[\033[92;1m3\033[97;1m] \033[0;92mCLONING FOR MIX IDz")
-    print('\033[0;91m----------------------------------')
-    hu = input('\033[97;1m[\033[92;1m+\033[97;1m]CHOOSE :\033[92;1m ')
+    print('\x1b[38;5;231m----------------------------------')
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCLONING FOR ONLY OLD IDz")
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CLONING FOR ONLY NEW IDz")
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCLONING FOR MIX IDz")
+    print('\x1b[38;5;231m----------------------------------')
+    hu = input('\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37mCHOOSE :\033[0;91m ')
     if hu in ['1','01']:
         for tua in sorted(id):
             id2.append(tua)
@@ -512,12 +511,12 @@ def setting():
         for bacot in id:
             xx = random.randint(0,len(id2))
             id2.insert(xx,bacot)
-    print('\033[0;91m---------------------')
-    print('\033[0;91m---------------------')
-    print("\033[97;1m[\033[92;1m1\033[97;1m] METHOD 1 [\033[0;92mCookies Show \033[0;91mCP ID Not Show\033[1;37m]")
-    print("\033[97;1m[\033[92;1m2\033[97;1m] METHOD 2 [\033[0;93mCp id Show\033[1;37m]")
-    print('\033[0;91m---------------------')
-    hc = input('\033[97;1m[\033[92;1m•\033[97;1m] CHOOSE : ')
+    print('\x1b[38;5;231m---------------------')
+    print('\x1b[38;5;231m---------------------')
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 1 [\033[0;92mCookies Show \x1b[38;5;231mCP ID Not Show\033[1;37m]")
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 2 [\033[0;93mCp id Show\033[1;37m]")
+    print('\x1b[38;5;231m---------------------')
+    hc = input('\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CHOOSE : ')
     #os.system("xdg-open https://www.facebook.com/MANAS.file.Ok.Bro")
     if hc in ['1','01']:
         method.append('mobile')
@@ -533,11 +532,11 @@ def setting():
 def passwrd():
     os.system('clear')
     print(logo)
-    print(f"\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;92mUSER NAME\033[1;91m :\033[1;96m "+uname)
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \033[10;93mTODAY'S DATE :\033[1;92m "+date)
-    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;92mYOUR TOTAL IDz \x1b[38;5;231m:\033[1;92m ',str(len(id)))
-    print("\033[97;1m[\033[92;1m•\033[97;1m] \x1b[38;5;208mSTARTED YOUR CLONING TIME\x1b[38;5;231m :> \033[1;92m"+time.strftime("%H:%M")+" "+ tag)
-    print(f'\033[97;1m[\033[92;1m•\033[97;1m] \033[1;92mUse Flight Mode For Speed Up ')
+    print(f"\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mUSER NAME\033[0;91m :\033[0;91m "+uname)
+    print("\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mTODAY'S DATE :\033[0;91m "+date)
+    print('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mYOUR TOTAL IDz \033[0;91m:\033[0;91m ',str(len(id)))
+    print("\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mSTARTED YOUR CLONING TIME\033[0;91m :> \033[0;91m"+time.strftime("%H:%M")+" "+ tag)
+    print(f'\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mUSE FLIGHT MODE FOR SPEED UP ')
     print('\x1b[38;5;231m--------------------------------------------------')
     with tred(max_workers=30) as pool:
         for yuzong in id2:
@@ -603,12 +602,12 @@ def passwrd():
                 pool.submit(crackfree,idf,pwv)
             else:
                 pool.submit(crackfree,idf,pwv)
-    print('\n\033[1;37m------------------------------------------')
-    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mCLONING COMPLETE TIME :\033[1;92m'+time.strftime("%H:%M")+" "+ tag)
-    print('\033[97;1m[\033[92;1m•\033[97;1m] OK :\033[0;92m %s '%(ok))
-    print('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231mCP :\033[0;93m %s '%(cp))
-    print('\n\033[1;37m------------------------------------------')
-    woi = input('\x1b[38;5;231m[\x1b[38;5;231m+\x1b[38;5;231m\033[1;37m ENTER TO BACK')
+    print('\033[0;91m------------------------------------------')
+    print('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mCLONING COMPLETE TIME :\033[0;91m'+time.strftime("%H:%M")+" "+ tag)
+    print('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m OK :\033[0;91m %s '%(ok))
+    print('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mCP :\033[0;91m%s '%(cp))
+    print('\033[0;91m------------------------------------------')
+    woi = input('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37m ENTER TO BACK')
     os.system("python v3.py")
     exit()
  
