@@ -16,10 +16,10 @@ CON=sol()
 os.system("pkg install espeak")
  #------------------[ MANAS-file ]-------------------#
 import os, platform, time, sys
-print(f""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37mChecking Update...? """)
+print(f""" \x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mChecking Update...? """)
 time.sleep(5)
 os.system('clear')
-print(f""" \x1b[38;5;196m[\x1b[37m0\x1b[38;5;196m]\x1b[37mUpdate done ✅""")
+print(f""" \x1b[38;5;196m[\x1b[37m✓\x1b[38;5;196m]\x1b[37mUpdate done ✅""")
 time.sleep(2)
 #------------------[ MANAS-file ]-------------------#
 #------------------[ USER-AGENT ]-------------------#
@@ -209,7 +209,7 @@ logo ="""
 os.system('clear')
 print(logo)
 os.system('espeak -a 300 " Your,   Real,  Name,"')
-uname =input('\033[1;97m[\033[1;92m•\x1b[38;5;231m WHAT IS YOUR NAME \x1b[38;5;231m')
+uname =input('\033[1;97m[\033[1;92m•\x1b[38;5;231m WHAT IS YOUR NAME : \x1b[38;5;231m')
 os.system('espeak -a 300 " Welcome,   to,  MANAS,  DAJU,  Tools"')
 pass
  
@@ -470,8 +470,8 @@ def dump_massal():
 def crack_file():
     print('\x1b[38;5;231m---------------------')
     #os.system#('espeak -a 300 " your file name"')
-    print('\033[0;91m[ Put File Example:  /sdcard/file.txt  Etc...]')
-    o = input('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mINPut FILE NAME :\033[0;91m ')
+    print('\x1b[38;5;231m[ /sdcard/file.txt  Etc...]')
+    o = input('\x1b[38;5;196m[\x1b[37m•\x1b[38;5;196m]\x1b[37mENTER FILE NAME:\033[0;91m ')
     try:lin = open(o).read().splitlines()
     except:
         print('\x1b[38;5;231m---------------------')
@@ -513,8 +513,8 @@ def setting():
             id2.insert(xx,bacot)
     print('\x1b[38;5;231m---------------------')
     print('\x1b[38;5;231m---------------------')
-    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 1 [\033[0;92mCookies Show \x1b[38;5;231mCP ID Not Show\033[1;37m]")
-    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 2 [\033[0;93mCp id Show\033[1;37m]")
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 1 [\033[0;92mCOOKIES SHOW \x1b[38;5;231mCP ID NOT SHOW\033[1;37m]")
+    print("\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m METHOD 2 [\033[0;93mCP ID SHOW\033[1;37m]")
     print('\x1b[38;5;231m---------------------')
     hc = input('\x1b[38;5;196m[\x1b[37m×\x1b[38;5;196m]\x1b[37m CHOOSE : ')
     #os.system("xdg-open https://www.facebook.com/MANAS.file.Ok.Bro")
